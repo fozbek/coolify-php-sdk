@@ -1,4 +1,4 @@
-# OpenAPI\Client\ProjectsApi
+# CoolifyPHP\Client\ProjectsApi
 
 All URIs are relative to https://app.coolify.io/api/v1, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://app.coolify.io/api/v1, except if the operation 
 ## `createProject()`
 
 ```php
-createProject($create_project_request): \OpenAPI\Client\Model\CreateProject201Response
+createProject($create_project_request): \CoolifyPHP\Client\Model\CreateProject201Response
 ```
 
 Create
@@ -30,16 +30,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProjectsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_project_request = new \OpenAPI\Client\Model\CreateProjectRequest(); // \OpenAPI\Client\Model\CreateProjectRequest | Project created.
+$create_project_request = new \CoolifyPHP\Client\Model\CreateProjectRequest(); // \CoolifyPHP\Client\Model\CreateProjectRequest | Project created.
 
 try {
     $result = $apiInstance->createProject($create_project_request);
@@ -53,11 +53,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_project_request** | [**\OpenAPI\Client\Model\CreateProjectRequest**](../Model/CreateProjectRequest.md)| Project created. | |
+| **create_project_request** | [**\CoolifyPHP\Client\Model\CreateProjectRequest**](../Model/CreateProjectRequest.md)| Project created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateProject201Response**](../Model/CreateProject201Response.md)
+[**\CoolifyPHP\Client\Model\CreateProject201Response**](../Model/CreateProject201Response.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ try {
 ## `deleteProjectByUuid()`
 
 ```php
-deleteProjectByUuid($uuid): \OpenAPI\Client\Model\DeleteProjectByUuid200Response
+deleteProjectByUuid($uuid): \CoolifyPHP\Client\Model\DeleteProjectByUuid200Response
 ```
 
 Delete
@@ -90,10 +90,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProjectsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeleteProjectByUuid200Response**](../Model/DeleteProjectByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\DeleteProjectByUuid200Response**](../Model/DeleteProjectByUuid200Response.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ try {
 ## `getEnvironmentByNameOrUuid()`
 
 ```php
-getEnvironmentByNameOrUuid($uuid, $environment_name_or_uuid): \OpenAPI\Client\Model\Environment
+getEnvironmentByNameOrUuid($uuid, $environment_name_or_uuid): \CoolifyPHP\Client\Model\Environment
 ```
 
 Environment
@@ -150,10 +150,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProjectsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Environment**](../Model/Environment.md)
+[**\CoolifyPHP\Client\Model\Environment**](../Model/Environment.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ try {
 ## `getProjectByUuid()`
 
 ```php
-getProjectByUuid($uuid): \OpenAPI\Client\Model\Project
+getProjectByUuid($uuid): \CoolifyPHP\Client\Model\Project
 ```
 
 Get
@@ -212,10 +212,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProjectsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -239,7 +239,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Project**](../Model/Project.md)
+[**\CoolifyPHP\Client\Model\Project**](../Model/Project.md)
 
 ### Authorization
 
@@ -257,7 +257,7 @@ try {
 ## `listProjects()`
 
 ```php
-listProjects(): \OpenAPI\Client\Model\Project[]
+listProjects(): \CoolifyPHP\Client\Model\Project[]
 ```
 
 List
@@ -272,10 +272,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProjectsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -296,7 +296,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Project[]**](../Model/Project.md)
+[**\CoolifyPHP\Client\Model\Project[]**](../Model/Project.md)
 
 ### Authorization
 
@@ -314,7 +314,7 @@ This endpoint does not need any parameter.
 ## `updateProjectByUuid()`
 
 ```php
-updateProjectByUuid($uuid, $create_project_request): \OpenAPI\Client\Model\UpdateProjectByUuid201Response
+updateProjectByUuid($uuid, $create_project_request): \CoolifyPHP\Client\Model\UpdateProjectByUuid201Response
 ```
 
 Update
@@ -329,17 +329,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProjectsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $uuid = 'uuid_example'; // string | UUID of the project.
-$create_project_request = new \OpenAPI\Client\Model\CreateProjectRequest(); // \OpenAPI\Client\Model\CreateProjectRequest | Project updated.
+$create_project_request = new \CoolifyPHP\Client\Model\CreateProjectRequest(); // \CoolifyPHP\Client\Model\CreateProjectRequest | Project updated.
 
 try {
     $result = $apiInstance->updateProjectByUuid($uuid, $create_project_request);
@@ -354,11 +354,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **uuid** | **string**| UUID of the project. | |
-| **create_project_request** | [**\OpenAPI\Client\Model\CreateProjectRequest**](../Model/CreateProjectRequest.md)| Project updated. | |
+| **create_project_request** | [**\CoolifyPHP\Client\Model\CreateProjectRequest**](../Model/CreateProjectRequest.md)| Project updated. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UpdateProjectByUuid201Response**](../Model/UpdateProjectByUuid201Response.md)
+[**\CoolifyPHP\Client\Model\UpdateProjectByUuid201Response**](../Model/UpdateProjectByUuid201Response.md)
 
 ### Authorization
 

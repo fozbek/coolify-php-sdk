@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace CoolifyPHP\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use CoolifyPHP\Client\ApiException;
+use CoolifyPHP\Client\Configuration;
+use CoolifyPHP\Client\FormDataProcessor;
+use CoolifyPHP\Client\HeaderSelector;
+use CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * ResourcesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,9 +132,9 @@ class ResourcesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listResources'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function listResources(string $contentType = self::contentTypes['listResources'][0])
     {
@@ -149,9 +149,9 @@ class ResourcesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listResources'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function listResourcesWithHttpInfo(string $contentType = self::contentTypes['listResources'][0])
     {
@@ -189,13 +189,13 @@ class ResourcesApi
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -234,7 +234,7 @@ class ResourcesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class ResourcesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace CoolifyPHP\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use CoolifyPHP\Client\ApiException;
+use CoolifyPHP\Client\Configuration;
+use CoolifyPHP\Client\FormDataProcessor;
+use CoolifyPHP\Client\HeaderSelector;
+use CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * ServersApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -151,12 +151,12 @@ class ServersApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreateServerRequest $create_server_request Server created. (required)
+     * @param  \CoolifyPHP\Client\Model\CreateServerRequest $create_server_request Server created. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createServer'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateServer201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\CreateServer201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function createServer($create_server_request, string $contentType = self::contentTypes['createServer'][0])
     {
@@ -169,12 +169,12 @@ class ServersApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreateServerRequest $create_server_request Server created. (required)
+     * @param  \CoolifyPHP\Client\Model\CreateServerRequest $create_server_request Server created. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createServer'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateServer201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\CreateServer201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function createServerWithHttpInfo($create_server_request, string $contentType = self::contentTypes['createServer'][0])
     {
@@ -206,25 +206,25 @@ class ServersApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\CreateServer201Response',
+                        '\CoolifyPHP\Client\Model\CreateServer201Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -246,7 +246,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\CreateServer201Response',
+                '\CoolifyPHP\Client\Model\CreateServer201Response',
                 $request,
                 $response,
             );
@@ -255,7 +255,7 @@ class ServersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateServer201Response',
+                        '\CoolifyPHP\Client\Model\CreateServer201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -263,7 +263,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -279,7 +279,7 @@ class ServersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -296,7 +296,7 @@ class ServersApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreateServerRequest $create_server_request Server created. (required)
+     * @param  \CoolifyPHP\Client\Model\CreateServerRequest $create_server_request Server created. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createServer'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -317,7 +317,7 @@ class ServersApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreateServerRequest $create_server_request Server created. (required)
+     * @param  \CoolifyPHP\Client\Model\CreateServerRequest $create_server_request Server created. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createServer'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -325,7 +325,7 @@ class ServersApi
      */
     public function createServerAsyncWithHttpInfo($create_server_request, string $contentType = self::contentTypes['createServer'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateServer201Response';
+        $returnType = '\CoolifyPHP\Client\Model\CreateServer201Response';
         $request = $this->createServerRequest($create_server_request, $contentType);
 
         return $this->client
@@ -367,7 +367,7 @@ class ServersApi
     /**
      * Create request for operation 'createServer'
      *
-     * @param  \OpenAPI\Client\Model\CreateServerRequest $create_server_request Server created. (required)
+     * @param  \CoolifyPHP\Client\Model\CreateServerRequest $create_server_request Server created. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createServer'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -467,9 +467,9 @@ class ServersApi
      * @param  string $uuid UUID of the server. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteServerByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\DeleteServerByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function deleteServerByUuid($uuid, string $contentType = self::contentTypes['deleteServerByUuid'][0])
     {
@@ -485,9 +485,9 @@ class ServersApi
      * @param  string $uuid UUID of the server. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteServerByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\DeleteServerByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteServerByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['deleteServerByUuid'][0])
     {
@@ -519,25 +519,25 @@ class ServersApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\DeleteServerByUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeleteServerByUuid200Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -559,7 +559,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\DeleteServerByUuid200Response',
+                '\CoolifyPHP\Client\Model\DeleteServerByUuid200Response',
                 $request,
                 $response,
             );
@@ -568,7 +568,7 @@ class ServersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteServerByUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeleteServerByUuid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -576,7 +576,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -584,7 +584,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -592,7 +592,7 @@ class ServersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -638,7 +638,7 @@ class ServersApi
      */
     public function deleteServerByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['deleteServerByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteServerByUuid200Response';
+        $returnType = '\CoolifyPHP\Client\Model\DeleteServerByUuid200Response';
         $request = $this->deleteServerByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -781,9 +781,9 @@ class ServersApi
      * @param  string $uuid Server&#39;s UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDomainsByServerUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetDomainsByServerUuid200ResponseInner[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\GetDomainsByServerUuid200ResponseInner[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function getDomainsByServerUuid($uuid, string $contentType = self::contentTypes['getDomainsByServerUuid'][0])
     {
@@ -799,9 +799,9 @@ class ServersApi
      * @param  string $uuid Server&#39;s UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDomainsByServerUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetDomainsByServerUuid200ResponseInner[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\GetDomainsByServerUuid200ResponseInner[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDomainsByServerUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['getDomainsByServerUuid'][0])
     {
@@ -833,19 +833,19 @@ class ServersApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\GetDomainsByServerUuid200ResponseInner[]',
+                        '\CoolifyPHP\Client\Model\GetDomainsByServerUuid200ResponseInner[]',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -867,7 +867,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\GetDomainsByServerUuid200ResponseInner[]',
+                '\CoolifyPHP\Client\Model\GetDomainsByServerUuid200ResponseInner[]',
                 $request,
                 $response,
             );
@@ -876,7 +876,7 @@ class ServersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDomainsByServerUuid200ResponseInner[]',
+                        '\CoolifyPHP\Client\Model\GetDomainsByServerUuid200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -884,7 +884,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -892,7 +892,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -938,7 +938,7 @@ class ServersApi
      */
     public function getDomainsByServerUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['getDomainsByServerUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetDomainsByServerUuid200ResponseInner[]';
+        $returnType = '\CoolifyPHP\Client\Model\GetDomainsByServerUuid200ResponseInner[]';
         $request = $this->getDomainsByServerUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -1081,9 +1081,9 @@ class ServersApi
      * @param  string $uuid Server&#39;s UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getResourcesByServerUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetResourcesByServerUuid200ResponseInner[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\GetResourcesByServerUuid200ResponseInner[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function getResourcesByServerUuid($uuid, string $contentType = self::contentTypes['getResourcesByServerUuid'][0])
     {
@@ -1099,9 +1099,9 @@ class ServersApi
      * @param  string $uuid Server&#39;s UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getResourcesByServerUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetResourcesByServerUuid200ResponseInner[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\GetResourcesByServerUuid200ResponseInner[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function getResourcesByServerUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['getResourcesByServerUuid'][0])
     {
@@ -1133,19 +1133,19 @@ class ServersApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\GetResourcesByServerUuid200ResponseInner[]',
+                        '\CoolifyPHP\Client\Model\GetResourcesByServerUuid200ResponseInner[]',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -1167,7 +1167,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\GetResourcesByServerUuid200ResponseInner[]',
+                '\CoolifyPHP\Client\Model\GetResourcesByServerUuid200ResponseInner[]',
                 $request,
                 $response,
             );
@@ -1176,7 +1176,7 @@ class ServersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetResourcesByServerUuid200ResponseInner[]',
+                        '\CoolifyPHP\Client\Model\GetResourcesByServerUuid200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1184,7 +1184,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1192,7 +1192,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1238,7 +1238,7 @@ class ServersApi
      */
     public function getResourcesByServerUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['getResourcesByServerUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetResourcesByServerUuid200ResponseInner[]';
+        $returnType = '\CoolifyPHP\Client\Model\GetResourcesByServerUuid200ResponseInner[]';
         $request = $this->getResourcesByServerUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -1381,9 +1381,9 @@ class ServersApi
      * @param  string $uuid Server&#39;s UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Server|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\Server|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function getServerByUuid($uuid, string $contentType = self::contentTypes['getServerByUuid'][0])
     {
@@ -1399,9 +1399,9 @@ class ServersApi
      * @param  string $uuid Server&#39;s UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Server|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\Server|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function getServerByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['getServerByUuid'][0])
     {
@@ -1433,25 +1433,25 @@ class ServersApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Server',
+                        '\CoolifyPHP\Client\Model\Server',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -1473,7 +1473,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Server',
+                '\CoolifyPHP\Client\Model\Server',
                 $request,
                 $response,
             );
@@ -1482,7 +1482,7 @@ class ServersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Server',
+                        '\CoolifyPHP\Client\Model\Server',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1490,7 +1490,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1498,7 +1498,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1506,7 +1506,7 @@ class ServersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1552,7 +1552,7 @@ class ServersApi
      */
     public function getServerByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['getServerByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Server';
+        $returnType = '\CoolifyPHP\Client\Model\Server';
         $request = $this->getServerByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -1694,9 +1694,9 @@ class ServersApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listServers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Server[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\Server[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function listServers(string $contentType = self::contentTypes['listServers'][0])
     {
@@ -1711,9 +1711,9 @@ class ServersApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listServers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Server[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\Server[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function listServersWithHttpInfo(string $contentType = self::contentTypes['listServers'][0])
     {
@@ -1745,19 +1745,19 @@ class ServersApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Server[]',
+                        '\CoolifyPHP\Client\Model\Server[]',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -1779,7 +1779,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Server[]',
+                '\CoolifyPHP\Client\Model\Server[]',
                 $request,
                 $response,
             );
@@ -1788,7 +1788,7 @@ class ServersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Server[]',
+                        '\CoolifyPHP\Client\Model\Server[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1796,7 +1796,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1804,7 +1804,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1848,7 +1848,7 @@ class ServersApi
      */
     public function listServersAsyncWithHttpInfo(string $contentType = self::contentTypes['listServers'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Server[]';
+        $returnType = '\CoolifyPHP\Client\Model\Server[]';
         $request = $this->listServersRequest($contentType);
 
         return $this->client
@@ -1973,12 +1973,12 @@ class ServersApi
      * Update
      *
      * @param  string $uuid Server UUID (required)
-     * @param  \OpenAPI\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Server|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\Server|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function updateServerByUuid($uuid, $update_server_by_uuid_request, string $contentType = self::contentTypes['updateServerByUuid'][0])
     {
@@ -1992,12 +1992,12 @@ class ServersApi
      * Update
      *
      * @param  string $uuid Server UUID (required)
-     * @param  \OpenAPI\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Server|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\Server|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateServerByUuidWithHttpInfo($uuid, $update_server_by_uuid_request, string $contentType = self::contentTypes['updateServerByUuid'][0])
     {
@@ -2029,25 +2029,25 @@ class ServersApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Server',
+                        '\CoolifyPHP\Client\Model\Server',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -2069,7 +2069,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Server',
+                '\CoolifyPHP\Client\Model\Server',
                 $request,
                 $response,
             );
@@ -2078,7 +2078,7 @@ class ServersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Server',
+                        '\CoolifyPHP\Client\Model\Server',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2086,7 +2086,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2094,7 +2094,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2102,7 +2102,7 @@ class ServersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2120,7 +2120,7 @@ class ServersApi
      * Update
      *
      * @param  string $uuid Server UUID (required)
-     * @param  \OpenAPI\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateServerByUuid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2142,7 +2142,7 @@ class ServersApi
      * Update
      *
      * @param  string $uuid Server UUID (required)
-     * @param  \OpenAPI\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateServerByUuid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2150,7 +2150,7 @@ class ServersApi
      */
     public function updateServerByUuidAsyncWithHttpInfo($uuid, $update_server_by_uuid_request, string $contentType = self::contentTypes['updateServerByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Server';
+        $returnType = '\CoolifyPHP\Client\Model\Server';
         $request = $this->updateServerByUuidRequest($uuid, $update_server_by_uuid_request, $contentType);
 
         return $this->client
@@ -2193,7 +2193,7 @@ class ServersApi
      * Create request for operation 'updateServerByUuid'
      *
      * @param  string $uuid Server UUID (required)
-     * @param  \OpenAPI\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateServerByUuidRequest $update_server_by_uuid_request Server updated. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateServerByUuid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2308,9 +2308,9 @@ class ServersApi
      * @param  string $uuid Server UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['validateServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ValidateServerByUuid201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\ValidateServerByUuid201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function validateServerByUuid($uuid, string $contentType = self::contentTypes['validateServerByUuid'][0])
     {
@@ -2326,9 +2326,9 @@ class ServersApi
      * @param  string $uuid Server UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['validateServerByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ValidateServerByUuid201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\ValidateServerByUuid201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function validateServerByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['validateServerByUuid'][0])
     {
@@ -2360,25 +2360,25 @@ class ServersApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\ValidateServerByUuid201Response',
+                        '\CoolifyPHP\Client\Model\ValidateServerByUuid201Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -2400,7 +2400,7 @@ class ServersApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\ValidateServerByUuid201Response',
+                '\CoolifyPHP\Client\Model\ValidateServerByUuid201Response',
                 $request,
                 $response,
             );
@@ -2409,7 +2409,7 @@ class ServersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidateServerByUuid201Response',
+                        '\CoolifyPHP\Client\Model\ValidateServerByUuid201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2417,7 +2417,7 @@ class ServersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2425,7 +2425,7 @@ class ServersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2433,7 +2433,7 @@ class ServersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2479,7 +2479,7 @@ class ServersApi
      */
     public function validateServerByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['validateServerByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ValidateServerByUuid201Response';
+        $returnType = '\CoolifyPHP\Client\Model\ValidateServerByUuid201Response';
         $request = $this->validateServerByUuidRequest($uuid, $contentType);
 
         return $this->client

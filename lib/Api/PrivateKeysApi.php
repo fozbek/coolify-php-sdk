@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace CoolifyPHP\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use CoolifyPHP\Client\ApiException;
+use CoolifyPHP\Client\Configuration;
+use CoolifyPHP\Client\FormDataProcessor;
+use CoolifyPHP\Client\HeaderSelector;
+use CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * PrivateKeysApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,12 +142,12 @@ class PrivateKeysApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreatePrivateKeyRequest $create_private_key_request create_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\CreatePrivateKeyRequest $create_private_key_request create_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPrivateKey'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreatePublicApplication201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\CreatePublicApplication201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function createPrivateKey($create_private_key_request, string $contentType = self::contentTypes['createPrivateKey'][0])
     {
@@ -160,12 +160,12 @@ class PrivateKeysApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPrivateKey'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreatePublicApplication201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\CreatePublicApplication201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function createPrivateKeyWithHttpInfo($create_private_key_request, string $contentType = self::contentTypes['createPrivateKey'][0])
     {
@@ -197,19 +197,19 @@ class PrivateKeysApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\CreatePublicApplication201Response',
+                        '\CoolifyPHP\Client\Model\CreatePublicApplication201Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -231,7 +231,7 @@ class PrivateKeysApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\CreatePublicApplication201Response',
+                '\CoolifyPHP\Client\Model\CreatePublicApplication201Response',
                 $request,
                 $response,
             );
@@ -240,7 +240,7 @@ class PrivateKeysApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreatePublicApplication201Response',
+                        '\CoolifyPHP\Client\Model\CreatePublicApplication201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class PrivateKeysApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -256,7 +256,7 @@ class PrivateKeysApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -273,7 +273,7 @@ class PrivateKeysApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPrivateKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -294,7 +294,7 @@ class PrivateKeysApi
      *
      * Create
      *
-     * @param  \OpenAPI\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPrivateKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -302,7 +302,7 @@ class PrivateKeysApi
      */
     public function createPrivateKeyAsyncWithHttpInfo($create_private_key_request, string $contentType = self::contentTypes['createPrivateKey'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreatePublicApplication201Response';
+        $returnType = '\CoolifyPHP\Client\Model\CreatePublicApplication201Response';
         $request = $this->createPrivateKeyRequest($create_private_key_request, $contentType);
 
         return $this->client
@@ -344,7 +344,7 @@ class PrivateKeysApi
     /**
      * Create request for operation 'createPrivateKey'
      *
-     * @param  \OpenAPI\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\CreatePrivateKeyRequest $create_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPrivateKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,9 +444,9 @@ class PrivateKeysApi
      * @param  string $uuid Private Key UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deletePrivateKeyByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\DeletePrivateKeyByUuid422Response
+     * @return \CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid422Response
      */
     public function deletePrivateKeyByUuid($uuid, string $contentType = self::contentTypes['deletePrivateKeyByUuid'][0])
     {
@@ -462,9 +462,9 @@ class PrivateKeysApi
      * @param  string $uuid Private Key UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deletePrivateKeyByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\DeletePrivateKeyByUuid422Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid422Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deletePrivateKeyByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['deletePrivateKeyByUuid'][0])
     {
@@ -496,25 +496,25 @@ class PrivateKeysApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 422:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\DeletePrivateKeyByUuid422Response',
+                        '\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid422Response',
                         $request,
                         $response,
                     );
@@ -536,7 +536,7 @@ class PrivateKeysApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response',
+                '\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response',
                 $request,
                 $response,
             );
@@ -545,7 +545,7 @@ class PrivateKeysApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -553,7 +553,7 @@ class PrivateKeysApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -561,7 +561,7 @@ class PrivateKeysApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -569,7 +569,7 @@ class PrivateKeysApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeletePrivateKeyByUuid422Response',
+                        '\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid422Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class PrivateKeysApi
      */
     public function deletePrivateKeyByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['deletePrivateKeyByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response';
+        $returnType = '\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response';
         $request = $this->deletePrivateKeyByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -758,9 +758,9 @@ class PrivateKeysApi
      * @param  string $uuid Private Key UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPrivateKeyByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PrivateKey|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\PrivateKey|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function getPrivateKeyByUuid($uuid, string $contentType = self::contentTypes['getPrivateKeyByUuid'][0])
     {
@@ -776,9 +776,9 @@ class PrivateKeysApi
      * @param  string $uuid Private Key UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPrivateKeyByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PrivateKey|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\PrivateKey|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPrivateKeyByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['getPrivateKeyByUuid'][0])
     {
@@ -810,19 +810,19 @@ class PrivateKeysApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\PrivateKey',
+                        '\CoolifyPHP\Client\Model\PrivateKey',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -844,7 +844,7 @@ class PrivateKeysApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\PrivateKey',
+                '\CoolifyPHP\Client\Model\PrivateKey',
                 $request,
                 $response,
             );
@@ -853,7 +853,7 @@ class PrivateKeysApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PrivateKey',
+                        '\CoolifyPHP\Client\Model\PrivateKey',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -861,7 +861,7 @@ class PrivateKeysApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -869,7 +869,7 @@ class PrivateKeysApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -915,7 +915,7 @@ class PrivateKeysApi
      */
     public function getPrivateKeyByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['getPrivateKeyByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PrivateKey';
+        $returnType = '\CoolifyPHP\Client\Model\PrivateKey';
         $request = $this->getPrivateKeyByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -1057,9 +1057,9 @@ class PrivateKeysApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listPrivateKeys'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PrivateKey[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\PrivateKey[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function listPrivateKeys(string $contentType = self::contentTypes['listPrivateKeys'][0])
     {
@@ -1074,9 +1074,9 @@ class PrivateKeysApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listPrivateKeys'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PrivateKey[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\PrivateKey[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function listPrivateKeysWithHttpInfo(string $contentType = self::contentTypes['listPrivateKeys'][0])
     {
@@ -1108,19 +1108,19 @@ class PrivateKeysApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\PrivateKey[]',
+                        '\CoolifyPHP\Client\Model\PrivateKey[]',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -1142,7 +1142,7 @@ class PrivateKeysApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\PrivateKey[]',
+                '\CoolifyPHP\Client\Model\PrivateKey[]',
                 $request,
                 $response,
             );
@@ -1151,7 +1151,7 @@ class PrivateKeysApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PrivateKey[]',
+                        '\CoolifyPHP\Client\Model\PrivateKey[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1159,7 +1159,7 @@ class PrivateKeysApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1167,7 +1167,7 @@ class PrivateKeysApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1211,7 +1211,7 @@ class PrivateKeysApi
      */
     public function listPrivateKeysAsyncWithHttpInfo(string $contentType = self::contentTypes['listPrivateKeys'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PrivateKey[]';
+        $returnType = '\CoolifyPHP\Client\Model\PrivateKey[]';
         $request = $this->listPrivateKeysRequest($contentType);
 
         return $this->client
@@ -1335,12 +1335,12 @@ class PrivateKeysApi
      *
      * Update
      *
-     * @param  \OpenAPI\Client\Model\UpdatePrivateKeyRequest $update_private_key_request update_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\UpdatePrivateKeyRequest $update_private_key_request update_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePrivateKey'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreatePublicApplication201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\CreatePublicApplication201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function updatePrivateKey($update_private_key_request, string $contentType = self::contentTypes['updatePrivateKey'][0])
     {
@@ -1353,12 +1353,12 @@ class PrivateKeysApi
      *
      * Update
      *
-     * @param  \OpenAPI\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePrivateKey'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreatePublicApplication201Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\CreatePublicApplication201Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePrivateKeyWithHttpInfo($update_private_key_request, string $contentType = self::contentTypes['updatePrivateKey'][0])
     {
@@ -1390,19 +1390,19 @@ class PrivateKeysApi
             switch($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\CreatePublicApplication201Response',
+                        '\CoolifyPHP\Client\Model\CreatePublicApplication201Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -1424,7 +1424,7 @@ class PrivateKeysApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\CreatePublicApplication201Response',
+                '\CoolifyPHP\Client\Model\CreatePublicApplication201Response',
                 $request,
                 $response,
             );
@@ -1433,7 +1433,7 @@ class PrivateKeysApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreatePublicApplication201Response',
+                        '\CoolifyPHP\Client\Model\CreatePublicApplication201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1441,7 +1441,7 @@ class PrivateKeysApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1449,7 +1449,7 @@ class PrivateKeysApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1466,7 +1466,7 @@ class PrivateKeysApi
      *
      * Update
      *
-     * @param  \OpenAPI\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePrivateKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1487,7 +1487,7 @@ class PrivateKeysApi
      *
      * Update
      *
-     * @param  \OpenAPI\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePrivateKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1495,7 +1495,7 @@ class PrivateKeysApi
      */
     public function updatePrivateKeyAsyncWithHttpInfo($update_private_key_request, string $contentType = self::contentTypes['updatePrivateKey'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreatePublicApplication201Response';
+        $returnType = '\CoolifyPHP\Client\Model\CreatePublicApplication201Response';
         $request = $this->updatePrivateKeyRequest($update_private_key_request, $contentType);
 
         return $this->client
@@ -1537,7 +1537,7 @@ class PrivateKeysApi
     /**
      * Create request for operation 'updatePrivateKey'
      *
-     * @param  \OpenAPI\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
+     * @param  \CoolifyPHP\Client\Model\UpdatePrivateKeyRequest $update_private_key_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePrivateKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

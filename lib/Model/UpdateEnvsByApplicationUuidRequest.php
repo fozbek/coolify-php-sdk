@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace CoolifyPHP\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * UpdateEnvsByApplicationUuidRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UpdateEnvsByApplicationUuidRequest implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\OpenAPI\Client\Model\CreateEnvByApplicationUuidRequest[]'
+        'data' => '\CoolifyPHP\Client\Model\CreateEnvByApplicationUuidRequest[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class UpdateEnvsByApplicationUuidRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\CreateEnvByApplicationUuidRequest[]
+     * @return \CoolifyPHP\Client\Model\CreateEnvByApplicationUuidRequest[]
      */
     public function getData()
     {
@@ -305,7 +305,7 @@ class UpdateEnvsByApplicationUuidRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\CreateEnvByApplicationUuidRequest[] $data data
+     * @param \CoolifyPHP\Client\Model\CreateEnvByApplicationUuidRequest[] $data data
      *
      * @return self
      */

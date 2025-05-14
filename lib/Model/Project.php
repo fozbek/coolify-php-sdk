@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace CoolifyPHP\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * Project Class Doc Comment
  *
  * @category Class
  * @description Project model
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
         'uuid' => 'string',
         'name' => 'string',
         'description' => 'string',
-        'environments' => '\OpenAPI\Client\Model\Environment[]'
+        'environments' => '\CoolifyPHP\Client\Model\Environment[]'
     ];
 
     /**
@@ -429,7 +429,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets environments
      *
-     * @return \OpenAPI\Client\Model\Environment[]|null
+     * @return \CoolifyPHP\Client\Model\Environment[]|null
      */
     public function getEnvironments()
     {
@@ -439,7 +439,7 @@ class Project implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets environments
      *
-     * @param \OpenAPI\Client\Model\Environment[]|null $environments The environments of the project.
+     * @param \CoolifyPHP\Client\Model\Environment[]|null $environments The environments of the project.
      *
      * @return self
      */

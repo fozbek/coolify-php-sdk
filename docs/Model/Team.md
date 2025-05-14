@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **updated_at** | **string** | The date and time the team was last updated. | [optional]
 **show_boarding** | **bool** | Whether to show the boarding screen or not. | [optional]
 **custom_server_limit** | **string** | The custom server limit. | [optional]
-**members** | [**\OpenAPI\Client\Model\User[]**](User.md) | The members of the team. | [optional]
+**members** | [**\CoolifyPHP\Client\Model\User[]**](User.md) | The members of the team. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

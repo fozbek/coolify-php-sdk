@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace CoolifyPHP\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use CoolifyPHP\Client\ApiException;
+use CoolifyPHP\Client\Configuration;
+use CoolifyPHP\Client\FormDataProcessor;
+use CoolifyPHP\Client\HeaderSelector;
+use CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -141,9 +141,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['disableApi'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DisableApi200Response|\OpenAPI\Client\Model\DisableApi403Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\DisableApi200Response|\CoolifyPHP\Client\Model\DisableApi403Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function disableApi(string $contentType = self::contentTypes['disableApi'][0])
     {
@@ -158,9 +158,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['disableApi'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DisableApi200Response|\OpenAPI\Client\Model\DisableApi403Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\DisableApi200Response|\CoolifyPHP\Client\Model\DisableApi403Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function disableApiWithHttpInfo(string $contentType = self::contentTypes['disableApi'][0])
     {
@@ -192,25 +192,25 @@ class DefaultApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\DisableApi200Response',
+                        '\CoolifyPHP\Client\Model\DisableApi200Response',
                         $request,
                         $response,
                     );
                 case 403:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\DisableApi403Response',
+                        '\CoolifyPHP\Client\Model\DisableApi403Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -232,7 +232,7 @@ class DefaultApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\DisableApi200Response',
+                '\CoolifyPHP\Client\Model\DisableApi200Response',
                 $request,
                 $response,
             );
@@ -241,7 +241,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DisableApi200Response',
+                        '\CoolifyPHP\Client\Model\DisableApi200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -249,7 +249,7 @@ class DefaultApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DisableApi403Response',
+                        '\CoolifyPHP\Client\Model\DisableApi403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -257,7 +257,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -265,7 +265,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -309,7 +309,7 @@ class DefaultApi
      */
     public function disableApiAsyncWithHttpInfo(string $contentType = self::contentTypes['disableApi'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DisableApi200Response';
+        $returnType = '\CoolifyPHP\Client\Model\DisableApi200Response';
         $request = $this->disableApiRequest($contentType);
 
         return $this->client
@@ -435,9 +435,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['enableApi'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EnableApi200Response|\OpenAPI\Client\Model\EnableApi403Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\EnableApi200Response|\CoolifyPHP\Client\Model\EnableApi403Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function enableApi(string $contentType = self::contentTypes['enableApi'][0])
     {
@@ -452,9 +452,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['enableApi'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EnableApi200Response|\OpenAPI\Client\Model\EnableApi403Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\EnableApi200Response|\CoolifyPHP\Client\Model\EnableApi403Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function enableApiWithHttpInfo(string $contentType = self::contentTypes['enableApi'][0])
     {
@@ -486,25 +486,25 @@ class DefaultApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\EnableApi200Response',
+                        '\CoolifyPHP\Client\Model\EnableApi200Response',
                         $request,
                         $response,
                     );
                 case 403:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\EnableApi403Response',
+                        '\CoolifyPHP\Client\Model\EnableApi403Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -526,7 +526,7 @@ class DefaultApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\EnableApi200Response',
+                '\CoolifyPHP\Client\Model\EnableApi200Response',
                 $request,
                 $response,
             );
@@ -535,7 +535,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EnableApi200Response',
+                        '\CoolifyPHP\Client\Model\EnableApi200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -543,7 +543,7 @@ class DefaultApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EnableApi403Response',
+                        '\CoolifyPHP\Client\Model\EnableApi403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -551,7 +551,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -559,7 +559,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -603,7 +603,7 @@ class DefaultApi
      */
     public function enableApiAsyncWithHttpInfo(string $contentType = self::contentTypes['enableApi'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EnableApi200Response';
+        $returnType = '\CoolifyPHP\Client\Model\EnableApi200Response';
         $request = $this->enableApiRequest($contentType);
 
         return $this->client
@@ -729,9 +729,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthcheck'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function healthcheck(string $contentType = self::contentTypes['healthcheck'][0])
     {
@@ -746,9 +746,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthcheck'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function healthcheckWithHttpInfo(string $contentType = self::contentTypes['healthcheck'][0])
     {
@@ -786,13 +786,13 @@ class DefaultApi
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -831,7 +831,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -839,7 +839,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1005,9 +1005,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['version'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function version(string $contentType = self::contentTypes['version'][0])
     {
@@ -1022,9 +1022,9 @@ class DefaultApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['version'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function versionWithHttpInfo(string $contentType = self::contentTypes['version'][0])
     {
@@ -1062,13 +1062,13 @@ class DefaultApi
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -1107,7 +1107,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1115,7 +1115,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

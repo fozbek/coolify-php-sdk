@@ -1,4 +1,4 @@
-# OpenAPI\Client\DatabasesApi
+# CoolifyPHP\Client\DatabasesApi
 
 All URIs are relative to https://app.coolify.io/api/v1, except if the operation defines another base path.
 
@@ -39,16 +39,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_clickhouse_request = new \OpenAPI\Client\Model\CreateDatabaseClickhouseRequest(); // \OpenAPI\Client\Model\CreateDatabaseClickhouseRequest | Database data
+$create_database_clickhouse_request = new \CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest(); // \CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest | Database data
 
 try {
     $apiInstance->createDatabaseClickhouse($create_database_clickhouse_request);
@@ -61,7 +61,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_clickhouse_request** | [**\OpenAPI\Client\Model\CreateDatabaseClickhouseRequest**](../Model/CreateDatabaseClickhouseRequest.md)| Database data | |
+| **create_database_clickhouse_request** | [**\CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest**](../Model/CreateDatabaseClickhouseRequest.md)| Database data | |
 
 ### Return type
 
@@ -98,16 +98,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_dragonfly_request = new \OpenAPI\Client\Model\CreateDatabaseDragonflyRequest(); // \OpenAPI\Client\Model\CreateDatabaseDragonflyRequest | Database data
+$create_database_dragonfly_request = new \CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest(); // \CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest | Database data
 
 try {
     $apiInstance->createDatabaseDragonfly($create_database_dragonfly_request);
@@ -120,7 +120,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_dragonfly_request** | [**\OpenAPI\Client\Model\CreateDatabaseDragonflyRequest**](../Model/CreateDatabaseDragonflyRequest.md)| Database data | |
+| **create_database_dragonfly_request** | [**\CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest**](../Model/CreateDatabaseDragonflyRequest.md)| Database data | |
 
 ### Return type
 
@@ -157,16 +157,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_keydb_request = new \OpenAPI\Client\Model\CreateDatabaseKeydbRequest(); // \OpenAPI\Client\Model\CreateDatabaseKeydbRequest | Database data
+$create_database_keydb_request = new \CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest(); // \CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest | Database data
 
 try {
     $apiInstance->createDatabaseKeydb($create_database_keydb_request);
@@ -179,7 +179,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_keydb_request** | [**\OpenAPI\Client\Model\CreateDatabaseKeydbRequest**](../Model/CreateDatabaseKeydbRequest.md)| Database data | |
+| **create_database_keydb_request** | [**\CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest**](../Model/CreateDatabaseKeydbRequest.md)| Database data | |
 
 ### Return type
 
@@ -216,16 +216,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_mariadb_request = new \OpenAPI\Client\Model\CreateDatabaseMariadbRequest(); // \OpenAPI\Client\Model\CreateDatabaseMariadbRequest | Database data
+$create_database_mariadb_request = new \CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest(); // \CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest | Database data
 
 try {
     $apiInstance->createDatabaseMariadb($create_database_mariadb_request);
@@ -238,7 +238,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_mariadb_request** | [**\OpenAPI\Client\Model\CreateDatabaseMariadbRequest**](../Model/CreateDatabaseMariadbRequest.md)| Database data | |
+| **create_database_mariadb_request** | [**\CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest**](../Model/CreateDatabaseMariadbRequest.md)| Database data | |
 
 ### Return type
 
@@ -275,16 +275,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_mongodb_request = new \OpenAPI\Client\Model\CreateDatabaseMongodbRequest(); // \OpenAPI\Client\Model\CreateDatabaseMongodbRequest | Database data
+$create_database_mongodb_request = new \CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest(); // \CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest | Database data
 
 try {
     $apiInstance->createDatabaseMongodb($create_database_mongodb_request);
@@ -297,7 +297,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_mongodb_request** | [**\OpenAPI\Client\Model\CreateDatabaseMongodbRequest**](../Model/CreateDatabaseMongodbRequest.md)| Database data | |
+| **create_database_mongodb_request** | [**\CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest**](../Model/CreateDatabaseMongodbRequest.md)| Database data | |
 
 ### Return type
 
@@ -334,16 +334,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_mysql_request = new \OpenAPI\Client\Model\CreateDatabaseMysqlRequest(); // \OpenAPI\Client\Model\CreateDatabaseMysqlRequest | Database data
+$create_database_mysql_request = new \CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest(); // \CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest | Database data
 
 try {
     $apiInstance->createDatabaseMysql($create_database_mysql_request);
@@ -356,7 +356,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_mysql_request** | [**\OpenAPI\Client\Model\CreateDatabaseMysqlRequest**](../Model/CreateDatabaseMysqlRequest.md)| Database data | |
+| **create_database_mysql_request** | [**\CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest**](../Model/CreateDatabaseMysqlRequest.md)| Database data | |
 
 ### Return type
 
@@ -393,16 +393,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_postgresql_request = new \OpenAPI\Client\Model\CreateDatabasePostgresqlRequest(); // \OpenAPI\Client\Model\CreateDatabasePostgresqlRequest | Database data
+$create_database_postgresql_request = new \CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest(); // \CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest | Database data
 
 try {
     $apiInstance->createDatabasePostgresql($create_database_postgresql_request);
@@ -415,7 +415,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_postgresql_request** | [**\OpenAPI\Client\Model\CreateDatabasePostgresqlRequest**](../Model/CreateDatabasePostgresqlRequest.md)| Database data | |
+| **create_database_postgresql_request** | [**\CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest**](../Model/CreateDatabasePostgresqlRequest.md)| Database data | |
 
 ### Return type
 
@@ -452,16 +452,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_database_redis_request = new \OpenAPI\Client\Model\CreateDatabaseRedisRequest(); // \OpenAPI\Client\Model\CreateDatabaseRedisRequest | Database data
+$create_database_redis_request = new \CoolifyPHP\Client\Model\CreateDatabaseRedisRequest(); // \CoolifyPHP\Client\Model\CreateDatabaseRedisRequest | Database data
 
 try {
     $apiInstance->createDatabaseRedis($create_database_redis_request);
@@ -474,7 +474,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_database_redis_request** | [**\OpenAPI\Client\Model\CreateDatabaseRedisRequest**](../Model/CreateDatabaseRedisRequest.md)| Database data | |
+| **create_database_redis_request** | [**\CoolifyPHP\Client\Model\CreateDatabaseRedisRequest**](../Model/CreateDatabaseRedisRequest.md)| Database data | |
 
 ### Return type
 
@@ -496,7 +496,7 @@ void (empty response body)
 ## `deleteDatabaseByUuid()`
 
 ```php
-deleteDatabaseByUuid($uuid, $delete_configurations, $delete_volumes, $docker_cleanup, $delete_connected_networks): \OpenAPI\Client\Model\DeleteDatabaseByUuid200Response
+deleteDatabaseByUuid($uuid, $delete_configurations, $delete_volumes, $docker_cleanup, $delete_connected_networks): \CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response
 ```
 
 Delete
@@ -511,10 +511,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -546,7 +546,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeleteDatabaseByUuid200Response**](../Model/DeleteDatabaseByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response**](../Model/DeleteDatabaseByUuid200Response.md)
 
 ### Authorization
 
@@ -579,10 +579,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -639,10 +639,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -681,7 +681,7 @@ This endpoint does not need any parameter.
 ## `restartDatabaseByUuid()`
 
 ```php
-restartDatabaseByUuid($uuid): \OpenAPI\Client\Model\RestartDatabaseByUuid200Response
+restartDatabaseByUuid($uuid): \CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response
 ```
 
 Restart
@@ -696,10 +696,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -723,7 +723,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RestartDatabaseByUuid200Response**](../Model/RestartDatabaseByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response**](../Model/RestartDatabaseByUuid200Response.md)
 
 ### Authorization
 
@@ -741,7 +741,7 @@ try {
 ## `startDatabaseByUuid()`
 
 ```php
-startDatabaseByUuid($uuid): \OpenAPI\Client\Model\StartDatabaseByUuid200Response
+startDatabaseByUuid($uuid): \CoolifyPHP\Client\Model\StartDatabaseByUuid200Response
 ```
 
 Start
@@ -756,10 +756,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -783,7 +783,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\StartDatabaseByUuid200Response**](../Model/StartDatabaseByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\StartDatabaseByUuid200Response**](../Model/StartDatabaseByUuid200Response.md)
 
 ### Authorization
 
@@ -801,7 +801,7 @@ try {
 ## `stopDatabaseByUuid()`
 
 ```php
-stopDatabaseByUuid($uuid): \OpenAPI\Client\Model\StopDatabaseByUuid200Response
+stopDatabaseByUuid($uuid): \CoolifyPHP\Client\Model\StopDatabaseByUuid200Response
 ```
 
 Stop
@@ -816,10 +816,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -843,7 +843,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\StopDatabaseByUuid200Response**](../Model/StopDatabaseByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\StopDatabaseByUuid200Response**](../Model/StopDatabaseByUuid200Response.md)
 
 ### Authorization
 
@@ -876,17 +876,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DatabasesApi(
+$apiInstance = new CoolifyPHP\Client\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $uuid = 'uuid_example'; // string | UUID of the database.
-$update_database_by_uuid_request = new \OpenAPI\Client\Model\UpdateDatabaseByUuidRequest(); // \OpenAPI\Client\Model\UpdateDatabaseByUuidRequest | Database data
+$update_database_by_uuid_request = new \CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest(); // \CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest | Database data
 
 try {
     $apiInstance->updateDatabaseByUuid($uuid, $update_database_by_uuid_request);
@@ -900,7 +900,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **uuid** | **string**| UUID of the database. | |
-| **update_database_by_uuid_request** | [**\OpenAPI\Client\Model\UpdateDatabaseByUuidRequest**](../Model/UpdateDatabaseByUuidRequest.md)| Database data | |
+| **update_database_by_uuid_request** | [**\CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest**](../Model/UpdateDatabaseByUuidRequest.md)| Database data | |
 
 ### Return type
 

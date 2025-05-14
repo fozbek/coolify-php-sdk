@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace CoolifyPHP\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * Server Class Doc Comment
  *
  * @category Class
  * @description Server model
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -73,7 +73,7 @@ class Server implements ModelInterface, ArrayAccess, \JsonSerializable
         'validation_logs' => 'string',
         'log_drain_notification_sent' => 'bool',
         'swarm_cluster' => 'string',
-        'settings' => '\OpenAPI\Client\Model\ServerSetting'
+        'settings' => '\CoolifyPHP\Client\Model\ServerSetting'
     ];
 
     /**
@@ -839,7 +839,7 @@ class Server implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets settings
      *
-     * @return \OpenAPI\Client\Model\ServerSetting|null
+     * @return \CoolifyPHP\Client\Model\ServerSetting|null
      */
     public function getSettings()
     {
@@ -849,7 +849,7 @@ class Server implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets settings
      *
-     * @param \OpenAPI\Client\Model\ServerSetting|null $settings settings
+     * @param \CoolifyPHP\Client\Model\ServerSetting|null $settings settings
      *
      * @return self
      */

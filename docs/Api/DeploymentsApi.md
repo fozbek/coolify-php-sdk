@@ -1,4 +1,4 @@
-# OpenAPI\Client\DeploymentsApi
+# CoolifyPHP\Client\DeploymentsApi
 
 All URIs are relative to https://app.coolify.io/api/v1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://app.coolify.io/api/v1, except if the operation 
 ## `deployByTagOrUuid()`
 
 ```php
-deployByTagOrUuid($tag, $uuid, $force, $pr): \OpenAPI\Client\Model\DeployByTagOrUuid200Response
+deployByTagOrUuid($tag, $uuid, $force, $pr): \CoolifyPHP\Client\Model\DeployByTagOrUuid200Response
 ```
 
 Deploy
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeploymentsApi(
+$apiInstance = new CoolifyPHP\Client\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeployByTagOrUuid200Response**](../Model/DeployByTagOrUuid200Response.md)
+[**\CoolifyPHP\Client\Model\DeployByTagOrUuid200Response**](../Model/DeployByTagOrUuid200Response.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ try {
 ## `getDeploymentByUuid()`
 
 ```php
-getDeploymentByUuid($uuid): \OpenAPI\Client\Model\ApplicationDeploymentQueue
+getDeploymentByUuid($uuid): \CoolifyPHP\Client\Model\ApplicationDeploymentQueue
 ```
 
 Get
@@ -94,10 +94,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeploymentsApi(
+$apiInstance = new CoolifyPHP\Client\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ApplicationDeploymentQueue**](../Model/ApplicationDeploymentQueue.md)
+[**\CoolifyPHP\Client\Model\ApplicationDeploymentQueue**](../Model/ApplicationDeploymentQueue.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ try {
 ## `listDeployments()`
 
 ```php
-listDeployments(): \OpenAPI\Client\Model\ApplicationDeploymentQueue[]
+listDeployments(): \CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]
 ```
 
 List
@@ -154,10 +154,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeploymentsApi(
+$apiInstance = new CoolifyPHP\Client\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -178,7 +178,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ApplicationDeploymentQueue[]**](../Model/ApplicationDeploymentQueue.md)
+[**\CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]**](../Model/ApplicationDeploymentQueue.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ This endpoint does not need any parameter.
 ## `listDeploymentsByAppUuid()`
 
 ```php
-listDeploymentsByAppUuid($uuid, $skip, $take): \OpenAPI\Client\Model\Application[]
+listDeploymentsByAppUuid($uuid, $skip, $take): \CoolifyPHP\Client\Model\Application[]
 ```
 
 List application deployments
@@ -211,10 +211,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeploymentsApi(
+$apiInstance = new CoolifyPHP\Client\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -242,7 +242,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Application[]**](../Model/Application.md)
+[**\CoolifyPHP\Client\Model\Application[]**](../Model/Application.md)
 
 ### Authorization
 

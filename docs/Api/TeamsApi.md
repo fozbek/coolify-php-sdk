@@ -1,4 +1,4 @@
-# OpenAPI\Client\TeamsApi
+# CoolifyPHP\Client\TeamsApi
 
 All URIs are relative to https://app.coolify.io/api/v1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://app.coolify.io/api/v1, except if the operation 
 ## `getCurrentTeam()`
 
 ```php
-getCurrentTeam(): \OpenAPI\Client\Model\Team
+getCurrentTeam(): \CoolifyPHP\Client\Model\Team
 ```
 
 Authenticated Team
@@ -29,10 +29,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\TeamsApi(
+$apiInstance = new CoolifyPHP\Client\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Team**](../Model/Team.md)
+[**\CoolifyPHP\Client\Model\Team**](../Model/Team.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ This endpoint does not need any parameter.
 ## `getCurrentTeamMembers()`
 
 ```php
-getCurrentTeamMembers(): \OpenAPI\Client\Model\User[]
+getCurrentTeamMembers(): \CoolifyPHP\Client\Model\User[]
 ```
 
 Authenticated Team Members
@@ -86,10 +86,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\TeamsApi(
+$apiInstance = new CoolifyPHP\Client\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -110,7 +110,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User[]**](../Model/User.md)
+[**\CoolifyPHP\Client\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ This endpoint does not need any parameter.
 ## `getMembersByTeamId()`
 
 ```php
-getMembersByTeamId($id): \OpenAPI\Client\Model\User[]
+getMembersByTeamId($id): \CoolifyPHP\Client\Model\User[]
 ```
 
 Members
@@ -143,10 +143,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\TeamsApi(
+$apiInstance = new CoolifyPHP\Client\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\User[]**](../Model/User.md)
+[**\CoolifyPHP\Client\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ try {
 ## `getTeamById()`
 
 ```php
-getTeamById($id): \OpenAPI\Client\Model\Team
+getTeamById($id): \CoolifyPHP\Client\Model\Team
 ```
 
 Get
@@ -203,10 +203,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\TeamsApi(
+$apiInstance = new CoolifyPHP\Client\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -230,7 +230,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Team**](../Model/Team.md)
+[**\CoolifyPHP\Client\Model\Team**](../Model/Team.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ try {
 ## `listTeams()`
 
 ```php
-listTeams(): \OpenAPI\Client\Model\Team[]
+listTeams(): \CoolifyPHP\Client\Model\Team[]
 ```
 
 List
@@ -263,10 +263,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\TeamsApi(
+$apiInstance = new CoolifyPHP\Client\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -287,7 +287,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Team[]**](../Model/Team.md)
+[**\CoolifyPHP\Client\Model\Team[]**](../Model/Team.md)
 
 ### Authorization
 

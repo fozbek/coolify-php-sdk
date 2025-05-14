@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace CoolifyPHP\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * DeployByTagOrUuid200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class DeployByTagOrUuid200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'deployments' => '\OpenAPI\Client\Model\DeployByTagOrUuid200ResponseDeploymentsInner[]'
+        'deployments' => '\CoolifyPHP\Client\Model\DeployByTagOrUuid200ResponseDeploymentsInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class DeployByTagOrUuid200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets deployments
      *
-     * @return \OpenAPI\Client\Model\DeployByTagOrUuid200ResponseDeploymentsInner[]|null
+     * @return \CoolifyPHP\Client\Model\DeployByTagOrUuid200ResponseDeploymentsInner[]|null
      */
     public function getDeployments()
     {
@@ -302,7 +302,7 @@ class DeployByTagOrUuid200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets deployments
      *
-     * @param \OpenAPI\Client\Model\DeployByTagOrUuid200ResponseDeploymentsInner[]|null $deployments deployments
+     * @param \CoolifyPHP\Client\Model\DeployByTagOrUuid200ResponseDeploymentsInner[]|null $deployments deployments
      *
      * @return self
      */

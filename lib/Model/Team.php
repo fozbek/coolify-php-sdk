@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace CoolifyPHP\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * Team Class Doc Comment
  *
  * @category Class
  * @description Team model
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class Team implements ModelInterface, ArrayAccess, \JsonSerializable
         'updated_at' => 'string',
         'show_boarding' => 'bool',
         'custom_server_limit' => 'string',
-        'members' => '\OpenAPI\Client\Model\User[]'
+        'members' => '\CoolifyPHP\Client\Model\User[]'
     ];
 
     /**
@@ -565,7 +565,7 @@ class Team implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets members
      *
-     * @return \OpenAPI\Client\Model\User[]|null
+     * @return \CoolifyPHP\Client\Model\User[]|null
      */
     public function getMembers()
     {
@@ -575,7 +575,7 @@ class Team implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets members
      *
-     * @param \OpenAPI\Client\Model\User[]|null $members The members of the team.
+     * @param \CoolifyPHP\Client\Model\User[]|null $members The members of the team.
      *
      * @return self
      */

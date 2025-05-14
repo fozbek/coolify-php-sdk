@@ -1,4 +1,4 @@
-# OpenAPI\Client\PrivateKeysApi
+# CoolifyPHP\Client\PrivateKeysApi
 
 All URIs are relative to https://app.coolify.io/api/v1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://app.coolify.io/api/v1, except if the operation 
 ## `createPrivateKey()`
 
 ```php
-createPrivateKey($create_private_key_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+createPrivateKey($create_private_key_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Create
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PrivateKeysApi(
+$apiInstance = new CoolifyPHP\Client\Api\PrivateKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_private_key_request = new \OpenAPI\Client\Model\CreatePrivateKeyRequest(); // \OpenAPI\Client\Model\CreatePrivateKeyRequest
+$create_private_key_request = new \CoolifyPHP\Client\Model\CreatePrivateKeyRequest(); // \CoolifyPHP\Client\Model\CreatePrivateKeyRequest
 
 try {
     $result = $apiInstance->createPrivateKey($create_private_key_request);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_private_key_request** | [**\OpenAPI\Client\Model\CreatePrivateKeyRequest**](../Model/CreatePrivateKeyRequest.md)|  | |
+| **create_private_key_request** | [**\CoolifyPHP\Client\Model\CreatePrivateKeyRequest**](../Model/CreatePrivateKeyRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ try {
 ## `deletePrivateKeyByUuid()`
 
 ```php
-deletePrivateKeyByUuid($uuid): \OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response
+deletePrivateKeyByUuid($uuid): \CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response
 ```
 
 Delete
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PrivateKeysApi(
+$apiInstance = new CoolifyPHP\Client\Api\PrivateKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeletePrivateKeyByUuid200Response**](../Model/DeletePrivateKeyByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\DeletePrivateKeyByUuid200Response**](../Model/DeletePrivateKeyByUuid200Response.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ try {
 ## `getPrivateKeyByUuid()`
 
 ```php
-getPrivateKeyByUuid($uuid): \OpenAPI\Client\Model\PrivateKey
+getPrivateKeyByUuid($uuid): \CoolifyPHP\Client\Model\PrivateKey
 ```
 
 Get
@@ -149,10 +149,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PrivateKeysApi(
+$apiInstance = new CoolifyPHP\Client\Api\PrivateKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -176,7 +176,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PrivateKey**](../Model/PrivateKey.md)
+[**\CoolifyPHP\Client\Model\PrivateKey**](../Model/PrivateKey.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ try {
 ## `listPrivateKeys()`
 
 ```php
-listPrivateKeys(): \OpenAPI\Client\Model\PrivateKey[]
+listPrivateKeys(): \CoolifyPHP\Client\Model\PrivateKey[]
 ```
 
 List
@@ -209,10 +209,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PrivateKeysApi(
+$apiInstance = new CoolifyPHP\Client\Api\PrivateKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -233,7 +233,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PrivateKey[]**](../Model/PrivateKey.md)
+[**\CoolifyPHP\Client\Model\PrivateKey[]**](../Model/PrivateKey.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ This endpoint does not need any parameter.
 ## `updatePrivateKey()`
 
 ```php
-updatePrivateKey($update_private_key_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+updatePrivateKey($update_private_key_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Update
@@ -266,16 +266,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PrivateKeysApi(
+$apiInstance = new CoolifyPHP\Client\Api\PrivateKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$update_private_key_request = new \OpenAPI\Client\Model\UpdatePrivateKeyRequest(); // \OpenAPI\Client\Model\UpdatePrivateKeyRequest
+$update_private_key_request = new \CoolifyPHP\Client\Model\UpdatePrivateKeyRequest(); // \CoolifyPHP\Client\Model\UpdatePrivateKeyRequest
 
 try {
     $result = $apiInstance->updatePrivateKey($update_private_key_request);
@@ -289,11 +289,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **update_private_key_request** | [**\OpenAPI\Client\Model\UpdatePrivateKeyRequest**](../Model/UpdatePrivateKeyRequest.md)|  | |
+| **update_private_key_request** | [**\CoolifyPHP\Client\Model\UpdatePrivateKeyRequest**](../Model/UpdatePrivateKeyRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace CoolifyPHP\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use CoolifyPHP\Client\ApiException;
+use CoolifyPHP\Client\Configuration;
+use CoolifyPHP\Client\FormDataProcessor;
+use CoolifyPHP\Client\HeaderSelector;
+use CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * DeploymentsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -145,9 +145,9 @@ class DeploymentsApi
      * @param  int|null $pr Pull Request Id for deploying specific PR builds. Cannot be used with tag parameter. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deployByTagOrUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeployByTagOrUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\DeployByTagOrUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function deployByTagOrUuid($tag = null, $uuid = null, $force = null, $pr = null, string $contentType = self::contentTypes['deployByTagOrUuid'][0])
     {
@@ -166,9 +166,9 @@ class DeploymentsApi
      * @param  int|null $pr Pull Request Id for deploying specific PR builds. Cannot be used with tag parameter. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deployByTagOrUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeployByTagOrUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\DeployByTagOrUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function deployByTagOrUuidWithHttpInfo($tag = null, $uuid = null, $force = null, $pr = null, string $contentType = self::contentTypes['deployByTagOrUuid'][0])
     {
@@ -200,19 +200,19 @@ class DeploymentsApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\DeployByTagOrUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeployByTagOrUuid200Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -234,7 +234,7 @@ class DeploymentsApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\DeployByTagOrUuid200Response',
+                '\CoolifyPHP\Client\Model\DeployByTagOrUuid200Response',
                 $request,
                 $response,
             );
@@ -243,7 +243,7 @@ class DeploymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeployByTagOrUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeployByTagOrUuid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -251,7 +251,7 @@ class DeploymentsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -259,7 +259,7 @@ class DeploymentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -311,7 +311,7 @@ class DeploymentsApi
      */
     public function deployByTagOrUuidAsyncWithHttpInfo($tag = null, $uuid = null, $force = null, $pr = null, string $contentType = self::contentTypes['deployByTagOrUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeployByTagOrUuid200Response';
+        $returnType = '\CoolifyPHP\Client\Model\DeployByTagOrUuid200Response';
         $request = $this->deployByTagOrUuidRequest($tag, $uuid, $force, $pr, $contentType);
 
         return $this->client
@@ -482,9 +482,9 @@ class DeploymentsApi
      * @param  string $uuid Deployment UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDeploymentByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ApplicationDeploymentQueue|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\ApplicationDeploymentQueue|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function getDeploymentByUuid($uuid, string $contentType = self::contentTypes['getDeploymentByUuid'][0])
     {
@@ -500,9 +500,9 @@ class DeploymentsApi
      * @param  string $uuid Deployment UUID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDeploymentByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ApplicationDeploymentQueue|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\ApplicationDeploymentQueue|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDeploymentByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['getDeploymentByUuid'][0])
     {
@@ -534,25 +534,25 @@ class DeploymentsApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\ApplicationDeploymentQueue',
+                        '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -574,7 +574,7 @@ class DeploymentsApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\ApplicationDeploymentQueue',
+                '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue',
                 $request,
                 $response,
             );
@@ -583,7 +583,7 @@ class DeploymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ApplicationDeploymentQueue',
+                        '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -591,7 +591,7 @@ class DeploymentsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -599,7 +599,7 @@ class DeploymentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -607,7 +607,7 @@ class DeploymentsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -653,7 +653,7 @@ class DeploymentsApi
      */
     public function getDeploymentByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['getDeploymentByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ApplicationDeploymentQueue';
+        $returnType = '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue';
         $request = $this->getDeploymentByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -795,9 +795,9 @@ class DeploymentsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDeployments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ApplicationDeploymentQueue[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function listDeployments(string $contentType = self::contentTypes['listDeployments'][0])
     {
@@ -812,9 +812,9 @@ class DeploymentsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDeployments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ApplicationDeploymentQueue[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function listDeploymentsWithHttpInfo(string $contentType = self::contentTypes['listDeployments'][0])
     {
@@ -846,19 +846,19 @@ class DeploymentsApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\ApplicationDeploymentQueue[]',
+                        '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -880,7 +880,7 @@ class DeploymentsApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\ApplicationDeploymentQueue[]',
+                '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]',
                 $request,
                 $response,
             );
@@ -889,7 +889,7 @@ class DeploymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ApplicationDeploymentQueue[]',
+                        '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class DeploymentsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -905,7 +905,7 @@ class DeploymentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -949,7 +949,7 @@ class DeploymentsApi
      */
     public function listDeploymentsAsyncWithHttpInfo(string $contentType = self::contentTypes['listDeployments'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ApplicationDeploymentQueue[]';
+        $returnType = '\CoolifyPHP\Client\Model\ApplicationDeploymentQueue[]';
         $request = $this->listDeploymentsRequest($contentType);
 
         return $this->client
@@ -1078,9 +1078,9 @@ class DeploymentsApi
      * @param  int|null $take Number of records to take. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDeploymentsByAppUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Application[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return \CoolifyPHP\Client\Model\Application[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function listDeploymentsByAppUuid($uuid, $skip = 0, $take = 10, string $contentType = self::contentTypes['listDeploymentsByAppUuid'][0])
     {
@@ -1098,9 +1098,9 @@ class DeploymentsApi
      * @param  int|null $take Number of records to take. (optional, default to 10)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDeploymentsByAppUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Application[]|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\Application[]|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function listDeploymentsByAppUuidWithHttpInfo($uuid, $skip = 0, $take = 10, string $contentType = self::contentTypes['listDeploymentsByAppUuid'][0])
     {
@@ -1132,19 +1132,19 @@ class DeploymentsApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\Application[]',
+                        '\CoolifyPHP\Client\Model\Application[]',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -1166,7 +1166,7 @@ class DeploymentsApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\Application[]',
+                '\CoolifyPHP\Client\Model\Application[]',
                 $request,
                 $response,
             );
@@ -1175,7 +1175,7 @@ class DeploymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Application[]',
+                        '\CoolifyPHP\Client\Model\Application[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1183,7 +1183,7 @@ class DeploymentsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1191,7 +1191,7 @@ class DeploymentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1241,7 +1241,7 @@ class DeploymentsApi
      */
     public function listDeploymentsByAppUuidAsyncWithHttpInfo($uuid, $skip = 0, $take = 10, string $contentType = self::contentTypes['listDeploymentsByAppUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Application[]';
+        $returnType = '\CoolifyPHP\Client\Model\Application[]';
         $request = $this->listDeploymentsByAppUuidRequest($uuid, $skip, $take, $contentType);
 
         return $this->client

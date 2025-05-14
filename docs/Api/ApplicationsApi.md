@@ -1,4 +1,4 @@
-# OpenAPI\Client\ApplicationsApi
+# CoolifyPHP\Client\ApplicationsApi
 
 All URIs are relative to https://app.coolify.io/api/v1, except if the operation defines another base path.
 
@@ -28,7 +28,7 @@ All URIs are relative to https://app.coolify.io/api/v1, except if the operation 
 ## `createDockercomposeApplication()`
 
 ```php
-createDockercomposeApplication($create_dockercompose_application_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+createDockercomposeApplication($create_dockercompose_application_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Create (Docker Compose)
@@ -43,16 +43,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_dockercompose_application_request = new \OpenAPI\Client\Model\CreateDockercomposeApplicationRequest(); // \OpenAPI\Client\Model\CreateDockercomposeApplicationRequest | Application object that needs to be created.
+$create_dockercompose_application_request = new \CoolifyPHP\Client\Model\CreateDockercomposeApplicationRequest(); // \CoolifyPHP\Client\Model\CreateDockercomposeApplicationRequest | Application object that needs to be created.
 
 try {
     $result = $apiInstance->createDockercomposeApplication($create_dockercompose_application_request);
@@ -66,11 +66,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_dockercompose_application_request** | [**\OpenAPI\Client\Model\CreateDockercomposeApplicationRequest**](../Model/CreateDockercomposeApplicationRequest.md)| Application object that needs to be created. | |
+| **create_dockercompose_application_request** | [**\CoolifyPHP\Client\Model\CreateDockercomposeApplicationRequest**](../Model/CreateDockercomposeApplicationRequest.md)| Application object that needs to be created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -88,7 +88,7 @@ try {
 ## `createDockerfileApplication()`
 
 ```php
-createDockerfileApplication($create_dockerfile_application_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+createDockerfileApplication($create_dockerfile_application_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Create (Dockerfile)
@@ -103,16 +103,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_dockerfile_application_request = new \OpenAPI\Client\Model\CreateDockerfileApplicationRequest(); // \OpenAPI\Client\Model\CreateDockerfileApplicationRequest | Application object that needs to be created.
+$create_dockerfile_application_request = new \CoolifyPHP\Client\Model\CreateDockerfileApplicationRequest(); // \CoolifyPHP\Client\Model\CreateDockerfileApplicationRequest | Application object that needs to be created.
 
 try {
     $result = $apiInstance->createDockerfileApplication($create_dockerfile_application_request);
@@ -126,11 +126,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_dockerfile_application_request** | [**\OpenAPI\Client\Model\CreateDockerfileApplicationRequest**](../Model/CreateDockerfileApplicationRequest.md)| Application object that needs to be created. | |
+| **create_dockerfile_application_request** | [**\CoolifyPHP\Client\Model\CreateDockerfileApplicationRequest**](../Model/CreateDockerfileApplicationRequest.md)| Application object that needs to be created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ try {
 ## `createDockerimageApplication()`
 
 ```php
-createDockerimageApplication($create_dockerimage_application_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+createDockerimageApplication($create_dockerimage_application_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Create (Docker Image)
@@ -163,16 +163,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_dockerimage_application_request = new \OpenAPI\Client\Model\CreateDockerimageApplicationRequest(); // \OpenAPI\Client\Model\CreateDockerimageApplicationRequest | Application object that needs to be created.
+$create_dockerimage_application_request = new \CoolifyPHP\Client\Model\CreateDockerimageApplicationRequest(); // \CoolifyPHP\Client\Model\CreateDockerimageApplicationRequest | Application object that needs to be created.
 
 try {
     $result = $apiInstance->createDockerimageApplication($create_dockerimage_application_request);
@@ -186,11 +186,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_dockerimage_application_request** | [**\OpenAPI\Client\Model\CreateDockerimageApplicationRequest**](../Model/CreateDockerimageApplicationRequest.md)| Application object that needs to be created. | |
+| **create_dockerimage_application_request** | [**\CoolifyPHP\Client\Model\CreateDockerimageApplicationRequest**](../Model/CreateDockerimageApplicationRequest.md)| Application object that needs to be created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ try {
 ## `createEnvByApplicationUuid()`
 
 ```php
-createEnvByApplicationUuid($uuid, $create_env_by_application_uuid_request): \OpenAPI\Client\Model\CreateEnvByApplicationUuid201Response
+createEnvByApplicationUuid($uuid, $create_env_by_application_uuid_request): \CoolifyPHP\Client\Model\CreateEnvByApplicationUuid201Response
 ```
 
 Create Env
@@ -223,17 +223,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $uuid = 'uuid_example'; // string | UUID of the application.
-$create_env_by_application_uuid_request = new \OpenAPI\Client\Model\CreateEnvByApplicationUuidRequest(); // \OpenAPI\Client\Model\CreateEnvByApplicationUuidRequest | Env created.
+$create_env_by_application_uuid_request = new \CoolifyPHP\Client\Model\CreateEnvByApplicationUuidRequest(); // \CoolifyPHP\Client\Model\CreateEnvByApplicationUuidRequest | Env created.
 
 try {
     $result = $apiInstance->createEnvByApplicationUuid($uuid, $create_env_by_application_uuid_request);
@@ -248,11 +248,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **uuid** | **string**| UUID of the application. | |
-| **create_env_by_application_uuid_request** | [**\OpenAPI\Client\Model\CreateEnvByApplicationUuidRequest**](../Model/CreateEnvByApplicationUuidRequest.md)| Env created. | |
+| **create_env_by_application_uuid_request** | [**\CoolifyPHP\Client\Model\CreateEnvByApplicationUuidRequest**](../Model/CreateEnvByApplicationUuidRequest.md)| Env created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateEnvByApplicationUuid201Response**](../Model/CreateEnvByApplicationUuid201Response.md)
+[**\CoolifyPHP\Client\Model\CreateEnvByApplicationUuid201Response**](../Model/CreateEnvByApplicationUuid201Response.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ try {
 ## `createPrivateDeployKeyApplication()`
 
 ```php
-createPrivateDeployKeyApplication($create_private_deploy_key_application_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+createPrivateDeployKeyApplication($create_private_deploy_key_application_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Create (Private - Deploy Key)
@@ -285,16 +285,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_private_deploy_key_application_request = new \OpenAPI\Client\Model\CreatePrivateDeployKeyApplicationRequest(); // \OpenAPI\Client\Model\CreatePrivateDeployKeyApplicationRequest | Application object that needs to be created.
+$create_private_deploy_key_application_request = new \CoolifyPHP\Client\Model\CreatePrivateDeployKeyApplicationRequest(); // \CoolifyPHP\Client\Model\CreatePrivateDeployKeyApplicationRequest | Application object that needs to be created.
 
 try {
     $result = $apiInstance->createPrivateDeployKeyApplication($create_private_deploy_key_application_request);
@@ -308,11 +308,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_private_deploy_key_application_request** | [**\OpenAPI\Client\Model\CreatePrivateDeployKeyApplicationRequest**](../Model/CreatePrivateDeployKeyApplicationRequest.md)| Application object that needs to be created. | |
+| **create_private_deploy_key_application_request** | [**\CoolifyPHP\Client\Model\CreatePrivateDeployKeyApplicationRequest**](../Model/CreatePrivateDeployKeyApplicationRequest.md)| Application object that needs to be created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -330,7 +330,7 @@ try {
 ## `createPrivateGithubAppApplication()`
 
 ```php
-createPrivateGithubAppApplication($create_private_github_app_application_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+createPrivateGithubAppApplication($create_private_github_app_application_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Create (Private - GH App)
@@ -345,16 +345,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_private_github_app_application_request = new \OpenAPI\Client\Model\CreatePrivateGithubAppApplicationRequest(); // \OpenAPI\Client\Model\CreatePrivateGithubAppApplicationRequest | Application object that needs to be created.
+$create_private_github_app_application_request = new \CoolifyPHP\Client\Model\CreatePrivateGithubAppApplicationRequest(); // \CoolifyPHP\Client\Model\CreatePrivateGithubAppApplicationRequest | Application object that needs to be created.
 
 try {
     $result = $apiInstance->createPrivateGithubAppApplication($create_private_github_app_application_request);
@@ -368,11 +368,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_private_github_app_application_request** | [**\OpenAPI\Client\Model\CreatePrivateGithubAppApplicationRequest**](../Model/CreatePrivateGithubAppApplicationRequest.md)| Application object that needs to be created. | |
+| **create_private_github_app_application_request** | [**\CoolifyPHP\Client\Model\CreatePrivateGithubAppApplicationRequest**](../Model/CreatePrivateGithubAppApplicationRequest.md)| Application object that needs to be created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -390,7 +390,7 @@ try {
 ## `createPublicApplication()`
 
 ```php
-createPublicApplication($create_public_application_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+createPublicApplication($create_public_application_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Create (Public)
@@ -405,16 +405,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_public_application_request = new \OpenAPI\Client\Model\CreatePublicApplicationRequest(); // \OpenAPI\Client\Model\CreatePublicApplicationRequest | Application object that needs to be created.
+$create_public_application_request = new \CoolifyPHP\Client\Model\CreatePublicApplicationRequest(); // \CoolifyPHP\Client\Model\CreatePublicApplicationRequest | Application object that needs to be created.
 
 try {
     $result = $apiInstance->createPublicApplication($create_public_application_request);
@@ -428,11 +428,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_public_application_request** | [**\OpenAPI\Client\Model\CreatePublicApplicationRequest**](../Model/CreatePublicApplicationRequest.md)| Application object that needs to be created. | |
+| **create_public_application_request** | [**\CoolifyPHP\Client\Model\CreatePublicApplicationRequest**](../Model/CreatePublicApplicationRequest.md)| Application object that needs to be created. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -450,7 +450,7 @@ try {
 ## `deleteApplicationByUuid()`
 
 ```php
-deleteApplicationByUuid($uuid, $delete_configurations, $delete_volumes, $docker_cleanup, $delete_connected_networks): \OpenAPI\Client\Model\DeleteApplicationByUuid200Response
+deleteApplicationByUuid($uuid, $delete_configurations, $delete_volumes, $docker_cleanup, $delete_connected_networks): \CoolifyPHP\Client\Model\DeleteApplicationByUuid200Response
 ```
 
 Delete
@@ -465,10 +465,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -500,7 +500,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeleteApplicationByUuid200Response**](../Model/DeleteApplicationByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\DeleteApplicationByUuid200Response**](../Model/DeleteApplicationByUuid200Response.md)
 
 ### Authorization
 
@@ -518,7 +518,7 @@ try {
 ## `deleteEnvByApplicationUuid()`
 
 ```php
-deleteEnvByApplicationUuid($uuid, $env_uuid): \OpenAPI\Client\Model\DeleteEnvByApplicationUuid200Response
+deleteEnvByApplicationUuid($uuid, $env_uuid): \CoolifyPHP\Client\Model\DeleteEnvByApplicationUuid200Response
 ```
 
 Delete Env
@@ -533,10 +533,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -562,7 +562,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeleteEnvByApplicationUuid200Response**](../Model/DeleteEnvByApplicationUuid200Response.md)
+[**\CoolifyPHP\Client\Model\DeleteEnvByApplicationUuid200Response**](../Model/DeleteEnvByApplicationUuid200Response.md)
 
 ### Authorization
 
@@ -580,7 +580,7 @@ try {
 ## `getApplicationByUuid()`
 
 ```php
-getApplicationByUuid($uuid): \OpenAPI\Client\Model\Application
+getApplicationByUuid($uuid): \CoolifyPHP\Client\Model\Application
 ```
 
 Get
@@ -595,10 +595,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -622,7 +622,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Application**](../Model/Application.md)
+[**\CoolifyPHP\Client\Model\Application**](../Model/Application.md)
 
 ### Authorization
 
@@ -640,7 +640,7 @@ try {
 ## `getApplicationLogsByUuid()`
 
 ```php
-getApplicationLogsByUuid($uuid, $lines): \OpenAPI\Client\Model\GetApplicationLogsByUuid200Response
+getApplicationLogsByUuid($uuid, $lines): \CoolifyPHP\Client\Model\GetApplicationLogsByUuid200Response
 ```
 
 Get application logs.
@@ -655,10 +655,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -684,7 +684,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetApplicationLogsByUuid200Response**](../Model/GetApplicationLogsByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\GetApplicationLogsByUuid200Response**](../Model/GetApplicationLogsByUuid200Response.md)
 
 ### Authorization
 
@@ -702,7 +702,7 @@ try {
 ## `listApplications()`
 
 ```php
-listApplications(): \OpenAPI\Client\Model\Application[]
+listApplications(): \CoolifyPHP\Client\Model\Application[]
 ```
 
 List
@@ -717,10 +717,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -741,7 +741,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Application[]**](../Model/Application.md)
+[**\CoolifyPHP\Client\Model\Application[]**](../Model/Application.md)
 
 ### Authorization
 
@@ -759,7 +759,7 @@ This endpoint does not need any parameter.
 ## `listEnvsByApplicationUuid()`
 
 ```php
-listEnvsByApplicationUuid($uuid): \OpenAPI\Client\Model\EnvironmentVariable[]
+listEnvsByApplicationUuid($uuid): \CoolifyPHP\Client\Model\EnvironmentVariable[]
 ```
 
 List Envs
@@ -774,10 +774,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -801,7 +801,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\EnvironmentVariable[]**](../Model/EnvironmentVariable.md)
+[**\CoolifyPHP\Client\Model\EnvironmentVariable[]**](../Model/EnvironmentVariable.md)
 
 ### Authorization
 
@@ -819,7 +819,7 @@ try {
 ## `restartApplicationByUuid()`
 
 ```php
-restartApplicationByUuid($uuid): \OpenAPI\Client\Model\RestartApplicationByUuid200Response
+restartApplicationByUuid($uuid): \CoolifyPHP\Client\Model\RestartApplicationByUuid200Response
 ```
 
 Restart
@@ -834,10 +834,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -861,7 +861,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RestartApplicationByUuid200Response**](../Model/RestartApplicationByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\RestartApplicationByUuid200Response**](../Model/RestartApplicationByUuid200Response.md)
 
 ### Authorization
 
@@ -879,7 +879,7 @@ try {
 ## `startApplicationByUuid()`
 
 ```php
-startApplicationByUuid($uuid, $force, $instant_deploy): \OpenAPI\Client\Model\StartApplicationByUuid200Response
+startApplicationByUuid($uuid, $force, $instant_deploy): \CoolifyPHP\Client\Model\StartApplicationByUuid200Response
 ```
 
 Start
@@ -894,10 +894,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -925,7 +925,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\StartApplicationByUuid200Response**](../Model/StartApplicationByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\StartApplicationByUuid200Response**](../Model/StartApplicationByUuid200Response.md)
 
 ### Authorization
 
@@ -943,7 +943,7 @@ try {
 ## `stopApplicationByUuid()`
 
 ```php
-stopApplicationByUuid($uuid): \OpenAPI\Client\Model\StopApplicationByUuid200Response
+stopApplicationByUuid($uuid): \CoolifyPHP\Client\Model\StopApplicationByUuid200Response
 ```
 
 Stop
@@ -958,10 +958,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -985,7 +985,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\StopApplicationByUuid200Response**](../Model/StopApplicationByUuid200Response.md)
+[**\CoolifyPHP\Client\Model\StopApplicationByUuid200Response**](../Model/StopApplicationByUuid200Response.md)
 
 ### Authorization
 
@@ -1003,7 +1003,7 @@ try {
 ## `updateApplicationByUuid()`
 
 ```php
-updateApplicationByUuid($uuid, $update_application_by_uuid_request): \OpenAPI\Client\Model\CreatePublicApplication201Response
+updateApplicationByUuid($uuid, $update_application_by_uuid_request): \CoolifyPHP\Client\Model\CreatePublicApplication201Response
 ```
 
 Update
@@ -1018,17 +1018,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $uuid = 'uuid_example'; // string | UUID of the application.
-$update_application_by_uuid_request = new \OpenAPI\Client\Model\UpdateApplicationByUuidRequest(); // \OpenAPI\Client\Model\UpdateApplicationByUuidRequest | Application updated.
+$update_application_by_uuid_request = new \CoolifyPHP\Client\Model\UpdateApplicationByUuidRequest(); // \CoolifyPHP\Client\Model\UpdateApplicationByUuidRequest | Application updated.
 
 try {
     $result = $apiInstance->updateApplicationByUuid($uuid, $update_application_by_uuid_request);
@@ -1043,11 +1043,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **uuid** | **string**| UUID of the application. | |
-| **update_application_by_uuid_request** | [**\OpenAPI\Client\Model\UpdateApplicationByUuidRequest**](../Model/UpdateApplicationByUuidRequest.md)| Application updated. | |
+| **update_application_by_uuid_request** | [**\CoolifyPHP\Client\Model\UpdateApplicationByUuidRequest**](../Model/UpdateApplicationByUuidRequest.md)| Application updated. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
+[**\CoolifyPHP\Client\Model\CreatePublicApplication201Response**](../Model/CreatePublicApplication201Response.md)
 
 ### Authorization
 
@@ -1065,7 +1065,7 @@ try {
 ## `updateEnvByApplicationUuid()`
 
 ```php
-updateEnvByApplicationUuid($uuid, $update_env_by_application_uuid_request): \OpenAPI\Client\Model\UpdateEnvByApplicationUuid201Response
+updateEnvByApplicationUuid($uuid, $update_env_by_application_uuid_request): \CoolifyPHP\Client\Model\UpdateEnvByApplicationUuid201Response
 ```
 
 Update Env
@@ -1080,17 +1080,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $uuid = 'uuid_example'; // string | UUID of the application.
-$update_env_by_application_uuid_request = new \OpenAPI\Client\Model\UpdateEnvByApplicationUuidRequest(); // \OpenAPI\Client\Model\UpdateEnvByApplicationUuidRequest | Env updated.
+$update_env_by_application_uuid_request = new \CoolifyPHP\Client\Model\UpdateEnvByApplicationUuidRequest(); // \CoolifyPHP\Client\Model\UpdateEnvByApplicationUuidRequest | Env updated.
 
 try {
     $result = $apiInstance->updateEnvByApplicationUuid($uuid, $update_env_by_application_uuid_request);
@@ -1105,11 +1105,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **uuid** | **string**| UUID of the application. | |
-| **update_env_by_application_uuid_request** | [**\OpenAPI\Client\Model\UpdateEnvByApplicationUuidRequest**](../Model/UpdateEnvByApplicationUuidRequest.md)| Env updated. | |
+| **update_env_by_application_uuid_request** | [**\CoolifyPHP\Client\Model\UpdateEnvByApplicationUuidRequest**](../Model/UpdateEnvByApplicationUuidRequest.md)| Env updated. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UpdateEnvByApplicationUuid201Response**](../Model/UpdateEnvByApplicationUuid201Response.md)
+[**\CoolifyPHP\Client\Model\UpdateEnvByApplicationUuid201Response**](../Model/UpdateEnvByApplicationUuid201Response.md)
 
 ### Authorization
 
@@ -1127,7 +1127,7 @@ try {
 ## `updateEnvsByApplicationUuid()`
 
 ```php
-updateEnvsByApplicationUuid($uuid, $update_envs_by_application_uuid_request): \OpenAPI\Client\Model\UpdateEnvsByApplicationUuid201Response
+updateEnvsByApplicationUuid($uuid, $update_envs_by_application_uuid_request): \CoolifyPHP\Client\Model\UpdateEnvsByApplicationUuid201Response
 ```
 
 Update Envs (Bulk)
@@ -1142,17 +1142,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearerAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = CoolifyPHP\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicationsApi(
+$apiInstance = new CoolifyPHP\Client\Api\ApplicationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $uuid = 'uuid_example'; // string | UUID of the application.
-$update_envs_by_application_uuid_request = new \OpenAPI\Client\Model\UpdateEnvsByApplicationUuidRequest(); // \OpenAPI\Client\Model\UpdateEnvsByApplicationUuidRequest | Bulk envs updated.
+$update_envs_by_application_uuid_request = new \CoolifyPHP\Client\Model\UpdateEnvsByApplicationUuidRequest(); // \CoolifyPHP\Client\Model\UpdateEnvsByApplicationUuidRequest | Bulk envs updated.
 
 try {
     $result = $apiInstance->updateEnvsByApplicationUuid($uuid, $update_envs_by_application_uuid_request);
@@ -1167,11 +1167,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **uuid** | **string**| UUID of the application. | |
-| **update_envs_by_application_uuid_request** | [**\OpenAPI\Client\Model\UpdateEnvsByApplicationUuidRequest**](../Model/UpdateEnvsByApplicationUuidRequest.md)| Bulk envs updated. | |
+| **update_envs_by_application_uuid_request** | [**\CoolifyPHP\Client\Model\UpdateEnvsByApplicationUuidRequest**](../Model/UpdateEnvsByApplicationUuidRequest.md)| Bulk envs updated. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UpdateEnvsByApplicationUuid201Response**](../Model/UpdateEnvsByApplicationUuid201Response.md)
+[**\CoolifyPHP\Client\Model\UpdateEnvsByApplicationUuid201Response**](../Model/UpdateEnvsByApplicationUuid201Response.md)
 
 ### Authorization
 

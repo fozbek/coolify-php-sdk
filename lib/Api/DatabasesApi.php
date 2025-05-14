@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace CoolifyPHP\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -36,17 +36,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\FormDataProcessor;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use CoolifyPHP\Client\ApiException;
+use CoolifyPHP\Client\Configuration;
+use CoolifyPHP\Client\FormDataProcessor;
+use CoolifyPHP\Client\HeaderSelector;
+use CoolifyPHP\Client\ObjectSerializer;
 
 /**
  * DatabasesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  CoolifyPHP\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -172,10 +172,10 @@ class DatabasesApi
      *
      * Create (Clickhouse)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseClickhouse'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -189,10 +189,10 @@ class DatabasesApi
      *
      * Create (Clickhouse)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseClickhouse'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -229,7 +229,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -237,7 +237,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class DatabasesApi
      *
      * Create (Clickhouse)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseClickhouse'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -275,7 +275,7 @@ class DatabasesApi
      *
      * Create (Clickhouse)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseClickhouse'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabaseClickhouse'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseClickhouseRequest $create_database_clickhouse_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseClickhouse'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -409,10 +409,10 @@ class DatabasesApi
      *
      * Create (DragonFly)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseDragonfly'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -426,10 +426,10 @@ class DatabasesApi
      *
      * Create (DragonFly)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseDragonfly'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -466,7 +466,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -474,7 +474,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -491,7 +491,7 @@ class DatabasesApi
      *
      * Create (DragonFly)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseDragonfly'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -512,7 +512,7 @@ class DatabasesApi
      *
      * Create (DragonFly)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseDragonfly'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -549,7 +549,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabaseDragonfly'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseDragonflyRequest $create_database_dragonfly_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseDragonfly'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -646,10 +646,10 @@ class DatabasesApi
      *
      * Create (KeyDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseKeydb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -663,10 +663,10 @@ class DatabasesApi
      *
      * Create (KeyDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseKeydb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -703,7 +703,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -711,7 +711,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -728,7 +728,7 @@ class DatabasesApi
      *
      * Create (KeyDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseKeydb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -749,7 +749,7 @@ class DatabasesApi
      *
      * Create (KeyDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseKeydb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -786,7 +786,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabaseKeydb'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseKeydbRequest $create_database_keydb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseKeydb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -883,10 +883,10 @@ class DatabasesApi
      *
      * Create (MariaDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMariadb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -900,10 +900,10 @@ class DatabasesApi
      *
      * Create (MariaDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMariadb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -940,7 +940,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -948,7 +948,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -965,7 +965,7 @@ class DatabasesApi
      *
      * Create (MariaDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMariadb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -986,7 +986,7 @@ class DatabasesApi
      *
      * Create (MariaDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMariadb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1023,7 +1023,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabaseMariadb'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMariadbRequest $create_database_mariadb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMariadb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1120,10 +1120,10 @@ class DatabasesApi
      *
      * Create (MongoDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMongodb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1137,10 +1137,10 @@ class DatabasesApi
      *
      * Create (MongoDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMongodb'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1177,7 +1177,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1185,7 +1185,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1202,7 +1202,7 @@ class DatabasesApi
      *
      * Create (MongoDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMongodb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1223,7 +1223,7 @@ class DatabasesApi
      *
      * Create (MongoDB)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMongodb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1260,7 +1260,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabaseMongodb'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMongodbRequest $create_database_mongodb_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMongodb'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1357,10 +1357,10 @@ class DatabasesApi
      *
      * Create (MySQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMysql'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1374,10 +1374,10 @@ class DatabasesApi
      *
      * Create (MySQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMysql'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1414,7 +1414,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1422,7 +1422,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1439,7 +1439,7 @@ class DatabasesApi
      *
      * Create (MySQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMysql'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1460,7 +1460,7 @@ class DatabasesApi
      *
      * Create (MySQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMysql'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1497,7 +1497,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabaseMysql'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseMysqlRequest $create_database_mysql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseMysql'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1594,10 +1594,10 @@ class DatabasesApi
      *
      * Create (PostgreSQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabasePostgresql'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1611,10 +1611,10 @@ class DatabasesApi
      *
      * Create (PostgreSQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabasePostgresql'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1651,7 +1651,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1659,7 +1659,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1676,7 +1676,7 @@ class DatabasesApi
      *
      * Create (PostgreSQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabasePostgresql'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1697,7 +1697,7 @@ class DatabasesApi
      *
      * Create (PostgreSQL)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabasePostgresql'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1734,7 +1734,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabasePostgresql'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabasePostgresqlRequest $create_database_postgresql_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabasePostgresql'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1831,10 +1831,10 @@ class DatabasesApi
      *
      * Create (Redis)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseRedis'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1848,10 +1848,10 @@ class DatabasesApi
      *
      * Create (Redis)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseRedis'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1888,7 +1888,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1896,7 +1896,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1913,7 +1913,7 @@ class DatabasesApi
      *
      * Create (Redis)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseRedis'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1934,7 +1934,7 @@ class DatabasesApi
      *
      * Create (Redis)
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseRedis'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1971,7 +1971,7 @@ class DatabasesApi
     /**
      * Create request for operation 'createDatabaseRedis'
      *
-     * @param  \OpenAPI\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\CreateDatabaseRedisRequest $create_database_redis_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDatabaseRedis'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2075,9 +2075,9 @@ class DatabasesApi
      * @param  bool|null $delete_connected_networks Delete connected networks. (optional, default to true)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function deleteDatabaseByUuid($uuid, $delete_configurations = true, $delete_volumes = true, $docker_cleanup = true, $delete_connected_networks = true, string $contentType = self::contentTypes['deleteDatabaseByUuid'][0])
     {
@@ -2097,9 +2097,9 @@ class DatabasesApi
      * @param  bool|null $delete_connected_networks Delete connected networks. (optional, default to true)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteDatabaseByUuidWithHttpInfo($uuid, $delete_configurations = true, $delete_volumes = true, $docker_cleanup = true, $delete_connected_networks = true, string $contentType = self::contentTypes['deleteDatabaseByUuid'][0])
     {
@@ -2131,25 +2131,25 @@ class DatabasesApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\DeleteDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -2171,7 +2171,7 @@ class DatabasesApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\DeleteDatabaseByUuid200Response',
+                '\CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response',
                 $request,
                 $response,
             );
@@ -2180,7 +2180,7 @@ class DatabasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2188,7 +2188,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2196,7 +2196,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2204,7 +2204,7 @@ class DatabasesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2258,7 +2258,7 @@ class DatabasesApi
      */
     public function deleteDatabaseByUuidAsyncWithHttpInfo($uuid, $delete_configurations = true, $delete_volumes = true, $docker_cleanup = true, $delete_connected_networks = true, string $contentType = self::contentTypes['deleteDatabaseByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteDatabaseByUuid200Response';
+        $returnType = '\CoolifyPHP\Client\Model\DeleteDatabaseByUuid200Response';
         $request = $this->deleteDatabaseByUuidRequest($uuid, $delete_configurations, $delete_volumes, $docker_cleanup, $delete_connected_networks, $contentType);
 
         return $this->client
@@ -2445,9 +2445,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function getDatabaseByUuid($uuid, string $contentType = self::contentTypes['getDatabaseByUuid'][0])
     {
@@ -2463,9 +2463,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDatabaseByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['getDatabaseByUuid'][0])
     {
@@ -2503,19 +2503,19 @@ class DatabasesApi
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -2554,7 +2554,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2562,7 +2562,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2570,7 +2570,7 @@ class DatabasesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2758,9 +2758,9 @@ class DatabasesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDatabases'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject
+     * @return string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject
      */
     public function listDatabases(string $contentType = self::contentTypes['listDatabases'][0])
     {
@@ -2775,9 +2775,9 @@ class DatabasesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDatabases'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of string|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function listDatabasesWithHttpInfo(string $contentType = self::contentTypes['listDatabases'][0])
     {
@@ -2815,13 +2815,13 @@ class DatabasesApi
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
@@ -2860,7 +2860,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2868,7 +2868,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3039,9 +3039,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['restartDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RestartDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function restartDatabaseByUuid($uuid, string $contentType = self::contentTypes['restartDatabaseByUuid'][0])
     {
@@ -3057,9 +3057,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['restartDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RestartDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function restartDatabaseByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['restartDatabaseByUuid'][0])
     {
@@ -3091,25 +3091,25 @@ class DatabasesApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\RestartDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -3131,7 +3131,7 @@ class DatabasesApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\RestartDatabaseByUuid200Response',
+                '\CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response',
                 $request,
                 $response,
             );
@@ -3140,7 +3140,7 @@ class DatabasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RestartDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3148,7 +3148,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3156,7 +3156,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3164,7 +3164,7 @@ class DatabasesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3210,7 +3210,7 @@ class DatabasesApi
      */
     public function restartDatabaseByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['restartDatabaseByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RestartDatabaseByUuid200Response';
+        $returnType = '\CoolifyPHP\Client\Model\RestartDatabaseByUuid200Response';
         $request = $this->restartDatabaseByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -3353,9 +3353,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['startDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\StartDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\StartDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function startDatabaseByUuid($uuid, string $contentType = self::contentTypes['startDatabaseByUuid'][0])
     {
@@ -3371,9 +3371,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['startDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\StartDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\StartDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function startDatabaseByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['startDatabaseByUuid'][0])
     {
@@ -3405,25 +3405,25 @@ class DatabasesApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\StartDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\StartDatabaseByUuid200Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -3445,7 +3445,7 @@ class DatabasesApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\StartDatabaseByUuid200Response',
+                '\CoolifyPHP\Client\Model\StartDatabaseByUuid200Response',
                 $request,
                 $response,
             );
@@ -3454,7 +3454,7 @@ class DatabasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\StartDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\StartDatabaseByUuid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3462,7 +3462,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3470,7 +3470,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3478,7 +3478,7 @@ class DatabasesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3524,7 +3524,7 @@ class DatabasesApi
      */
     public function startDatabaseByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['startDatabaseByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\StartDatabaseByUuid200Response';
+        $returnType = '\CoolifyPHP\Client\Model\StartDatabaseByUuid200Response';
         $request = $this->startDatabaseByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -3667,9 +3667,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['stopDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\StopDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2
+     * @return \CoolifyPHP\Client\Model\StopDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2
      */
     public function stopDatabaseByUuid($uuid, string $contentType = self::contentTypes['stopDatabaseByUuid'][0])
     {
@@ -3685,9 +3685,9 @@ class DatabasesApi
      * @param  string $uuid UUID of the database. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['stopDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\StopDatabaseByUuid200Response|\OpenAPI\Client\Model\InlineObject1|\OpenAPI\Client\Model\InlineObject|\OpenAPI\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \CoolifyPHP\Client\Model\StopDatabaseByUuid200Response|\CoolifyPHP\Client\Model\InlineObject1|\CoolifyPHP\Client\Model\InlineObject|\CoolifyPHP\Client\Model\InlineObject2, HTTP status code, HTTP response headers (array of strings)
      */
     public function stopDatabaseByUuidWithHttpInfo($uuid, string $contentType = self::contentTypes['stopDatabaseByUuid'][0])
     {
@@ -3719,25 +3719,25 @@ class DatabasesApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\StopDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\StopDatabaseByUuid200Response',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $request,
                         $response,
                     );
                 case 400:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $request,
                         $response,
                     );
@@ -3759,7 +3759,7 @@ class DatabasesApi
             }
 
             return $this->handleResponseWithDataType(
-                '\OpenAPI\Client\Model\StopDatabaseByUuid200Response',
+                '\CoolifyPHP\Client\Model\StopDatabaseByUuid200Response',
                 $request,
                 $response,
             );
@@ -3768,7 +3768,7 @@ class DatabasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\StopDatabaseByUuid200Response',
+                        '\CoolifyPHP\Client\Model\StopDatabaseByUuid200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3776,7 +3776,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3784,7 +3784,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3792,7 +3792,7 @@ class DatabasesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3838,7 +3838,7 @@ class DatabasesApi
      */
     public function stopDatabaseByUuidAsyncWithHttpInfo($uuid, string $contentType = self::contentTypes['stopDatabaseByUuid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\StopDatabaseByUuid200Response';
+        $returnType = '\CoolifyPHP\Client\Model\StopDatabaseByUuid200Response';
         $request = $this->stopDatabaseByUuidRequest($uuid, $contentType);
 
         return $this->client
@@ -3979,10 +3979,10 @@ class DatabasesApi
      * Update
      *
      * @param  string $uuid UUID of the database. (required)
-     * @param  \OpenAPI\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3997,10 +3997,10 @@ class DatabasesApi
      * Update
      *
      * @param  string $uuid UUID of the database. (required)
-     * @param  \OpenAPI\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateDatabaseByUuid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \CoolifyPHP\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4037,7 +4037,7 @@ class DatabasesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject1',
+                        '\CoolifyPHP\Client\Model\InlineObject1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4045,7 +4045,7 @@ class DatabasesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject',
+                        '\CoolifyPHP\Client\Model\InlineObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4053,7 +4053,7 @@ class DatabasesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineObject2',
+                        '\CoolifyPHP\Client\Model\InlineObject2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4071,7 +4071,7 @@ class DatabasesApi
      * Update
      *
      * @param  string $uuid UUID of the database. (required)
-     * @param  \OpenAPI\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateDatabaseByUuid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4093,7 +4093,7 @@ class DatabasesApi
      * Update
      *
      * @param  string $uuid UUID of the database. (required)
-     * @param  \OpenAPI\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateDatabaseByUuid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4131,7 +4131,7 @@ class DatabasesApi
      * Create request for operation 'updateDatabaseByUuid'
      *
      * @param  string $uuid UUID of the database. (required)
-     * @param  \OpenAPI\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
+     * @param  \CoolifyPHP\Client\Model\UpdateDatabaseByUuidRequest $update_database_by_uuid_request Database data (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateDatabaseByUuid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
